@@ -1,0 +1,90 @@
+import React from "react";
+
+const Card = () => {
+  return (
+    <div className="row row-cols-1 row-cols-md-4 g-4 mt-2">
+      <div className="col">
+        <div className="card h-100 text-center">
+          <img
+            src="data:image/jpeg;base64,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"
+            className="card-img-top card-img-custom"
+            alt="Imagerelatedtohtml5"
+          />
+          <div className="card-body">
+            <h5 className="card-title">Messi</h5>
+            <p className="card-text">
+            (Lionel Andrés Messi; Rosario, Santa Fe, 1987) Futbolista argentino. Poseedor de una habilidad técnica excepcional, una endiablada velocidad y una inventiva inagotable, desde que llegó de la mano de sus padres al F.C. Barcelona, con 13 años de edad, realizó una carrera vertiginosa por las diferentes categorías hasta el primer equipo, en el que debutó con apenas 16 años en un partido amistoso ante el Oporto. En 2004, con 17 años, Leo Messi jugó su primer encuentro oficial de la Liga española. Con 18 años le llegó su consagración internacional: formó parte de la selección argentina, campeona en el Mundial Juvenil Sub-20 de Holanda, disputado en 2005.
+            </p>
+          </div>
+          <div className="card-footer text-body-secondary">
+            <a href="#" className="btn btn-primary">
+              Learn more...
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="col">
+        <div className="card h-100 text-center">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCwdPRKcWC2VweDkSBqt2zaY2g4gJh4DQDBw&usqp=CAU"
+            className="card-img-top card-img-custom"
+            alt="Imagerelatedtohtml5"
+          />
+          <div className="card-body">
+            <h5 className="card-title">CR7</h5>
+            <p className="card-text">
+            (Cristiano Ronaldo dos Santos Aveiro; Funchal, Madeira, 1985) Futbolista portugués considerado uno de los mejores delanteros del panorama actual. Además de los numerosos títulos y distinciones individuales obtenidos a lo largo de su trayectoria en el Manchester United (2003-2009) y en el Real Madrid (desde 2009), tuvo el honor de ser el futbolista por el que más dinero había pagado nunca un club: en junio de 2009, el traspaso al Real Madrid costó al club blanco 94 millones de euros, hasta ese momento la cifra más alta de la historia.
+            </p>
+          </div>
+          <div className="card-footer text-body-secondary">
+            <a href="#" className="btn btn-primary">
+              Learn more...
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="col">
+        <div className="card h-100 text-center">
+          <img
+            src="https://static.dw.com/image/61527609_605.webp"
+            className="card-img-top card-img-custom"
+            alt="Imagerelatedtojavascrip"
+          />
+          <div className="card-body">
+            <h5 className="card-title">Rey Pele</h5>
+            <p className="card-text">
+            (Edson Arantes do Nascimento; Três Corações, 1940 - São Paulo, 2022) Futbolista brasileño. El mejor futbolista de todos los tiempos, en opinión de muchos, fue rechazado por los principales clubes de fútbol brasileños en los comienzos de su carrera deportiva, hasta que, tras jugar en varias formaciones secundarias, en 1956 fichó por el Santos de São Paulo. Su padre había sido un jugador de fútbol mediocre que se retiró tempranamente. Mientras aprendía el oficio de dominar el balón, Pelé se ganaba la vida como limpiabotas. Pero a los once años ya se habían fijado en él, y a los quince llegó al Santos, el equipo de su vida, después de la selección nacional de Brasil.
+            </p>
+          </div>
+          <div className="card-footer text-body-secondary">
+            <a href="#" className="btn btn-primary">
+              Learn more...
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="col">
+        <div className="card h-100 text-center">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Argentina_celebrando_copa_%28cropped%29.jpg/273px-Argentina_celebrando_copa_%28cropped%29.jpg"
+            className="card-img-top card-img-custom"
+            alt="Imagerelatedtoreact"
+          />
+          <div className="card-body">
+            <h5 className="card-title">Maradroga</h5>
+            <p className="card-text">
+            (Buenos Aires, 1960 - Dique Luján, 2020) Futbolista argentino, uno de los más grandes de la historia, comparado a menudo con el legendario Pelé. Si bien su habilidad con el balón y su depurada técnica igualaron la del brasileño, la trayectoria de Maradona fue mucho más irregular: su carácter difícil, los problemas de salud y la adicción a las drogas malograron parte de su carrera, pero no impidió que su genialidad brillase en numerosas ocasiones. Tras ganar en 1979 el campeonato mundial juvenil con la selección de su país y triunfar dos años después en el Boca Juniors, inició un periplo europeo que lo llevó al F.C. Barcelona (1982-84), el Nápoles (1984-91) y el Sevilla (1992-93). De regreso a Argentina jugó en el Newell's Old Boys y en el Boca Juniors antes de retirarse en 1997. Con la selección argentina participó en cuatro mundiales y se alzó con el título mundial en el de México (1986), en el que tuvo una portentosa e inolvidable actuación.
+            </p>
+          </div>
+          <div className="card-footer text-body-secondary">
+            <a href="#" className="btn btn-primary">
+              Learn more...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Card;
